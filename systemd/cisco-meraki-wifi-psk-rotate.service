@@ -1,0 +1,11 @@
+[Unit]
+Description=Rotate TEST-WIFI WiFi PSK via Meraki API and email the new password
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/cisco-meraki-wifi-psk-rotate
+ExecStart=/opt/cisco-meraki-wifi-psk-rotate/venv/bin/python /opt/cisco-meraki-wifi-psk-rotate/src/main.py --config /opt/cisco-meraki-wifi-psk-rotate/config/config.yaml
+StandardOutput=journal
+StandardError=journal
