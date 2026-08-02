@@ -1,0 +1,22 @@
+meraki:
+  api_key: "REPLACE_WITH_MERAKI_API_KEY"
+  org_id: "REPLACE_WITH_ORG_ID"
+  network_id: "REPLACE_WITH_NETWORK_ID"
+  ssid_number: 0
+  ssid_name: "TEST-WIFI"
+
+email:
+  smtp_host: "email-smtp.REGION.amazonaws.com"
+  smtp_port: 587
+  smtp_username: "REPLACE_WITH_SES_SMTP_USERNAME"
+  smtp_password: "REPLACE_WITH_SES_SMTP_PASSWORD"
+  from_address: "REPLACE_WITH_VERIFIED_FROM_ADDRESS@example.com"
+  recipients:
+    - "REPLACE_WITH_RECIPIENT_1@example.com"
+  admin_alert_recipients:
+    - "REPLACE_WITH_ADMIN_EMAIL@example.com"
+
+password:
+  length: 8
+  special_char_count: 2
+  special_chars: "!@#$%^&*-_"
